@@ -10,4 +10,4 @@ Developed with Qt Framework using:
 - MinGW: 4.8.1 (32-bit)
 - OS: Ubuntu 16.04.04 LTS / Windows 7 Professional N 64 bit
 ## License
-* [MIT License](https://opensource.org/licenses/MIT)
+* [GNU LESSER GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/lgpl-3.0.en.html)
