@@ -10,17 +10,10 @@ void users::addUser( const users &use ) {
 }
 
 void users::addUser( const QSharedPointer < account > use ) {
-    bool ok = true;
     if( !use.isNull() ){
         QSharedPointer < username > name = use->p_user();
 
-        if( !name.isNull() && checkIfUsernameExist( name->showUser() ) )
-            ok &= false;
-
-        if( !showUser( use->p_info()->showRegistrationNumber() ).isNull() )
-            ok &= false;
-
-        if( ok )
+        if( !name.isNull() && checkIfUsernameExist( name->showUser() ) || !showUser( use->p_info()->showRegistrationNumber() ).isNull() )
             userCollection << use;
     }
 }
