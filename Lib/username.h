@@ -3,19 +3,18 @@
 
 #include <QString>
 
-class username
-{
-private:
-    QString user;
-    QString password;
+class username {
+ private:
+  QString user;
+  QString password;
 
-public:
-    username( const QString &, const QString & );
+ public:
+  username(const QString &, const QString &);
 
-    QString showUser() const;
-    QString showPass() const;
+  QString showUser() const;
+  QString showPass() const;
 
-    void setUsername( const QString & );
-    void setPassword( const QString & );
+  void setUsername(const QString &);
+  void setPassword(const QString &);
 };
-#endif // USERNAME_H
+#endif  // USERNAME_H

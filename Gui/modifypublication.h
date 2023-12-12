@@ -1,15 +1,15 @@
 #ifndef MODIFYPUBLICATION_H
 #define MODIFYPUBLICATION_H
 
-#include <QDialog>
 #include <QDate>
-#include <QString>
+#include <QDialog>
 #include <QFileDialog>
-#include <QSharedPointer>
+#include <QFont>
 #include <QMessageBox>
 #include <QRegExp>
 #include <QRegExpValidator>
-#include <QFont>
+#include <QSharedPointer>
+#include <QString>
 
 #include "../Lib/account_permission.h"
 #include "../Lib/book.h"
@@ -22,30 +22,31 @@ namespace Ui {
 class modifyPublication;
 }
 
-class modifyPublication : public QDialog
-{
-    Q_OBJECT
+class modifyPublication : public QDialog {
+  Q_OBJECT
 
-public:
-    explicit modifyPublication( const QSharedPointer < publication > =QSharedPointer < publication >() , QWidget *parent = 0);
-    ~modifyPublication();
+ public:
+  explicit modifyPublication(
+      const QSharedPointer<publication> = QSharedPointer<publication>(),
+      QWidget *parent = 0);
+  ~modifyPublication();
 
-signals:
-    void savePublication( const QSharedPointer < publication > );
+ signals:
+  void savePublication(const QSharedPointer<publication>);
 
-private slots:
-    void on_exitButton_clicked();
-    void on_publiBox_currentIndexChanged( int );
-    void checkLineEdits( const QString & );
-    void checkLineEdits( const QDate & );
-    void on_saveButton_clicked();
-    void addResult( const bool & );
+ private slots:
+  void on_exitButton_clicked();
+  void on_publiBox_currentIndexChanged(int);
+  void checkLineEdits(const QString &);
+  void checkLineEdits(const QDate &);
+  void on_saveButton_clicked();
+  void addResult(const bool &);
 
-private:
-    Ui::modifyPublication *ui;
-    QSharedPointer < publication > currentPublication;
+ private:
+  Ui::modifyPublication *ui;
+  QSharedPointer<publication> currentPublication;
 
-    void isbnError( const bool & = true );
+  void isbnError(const bool & = true);
 };
 
-#endif // MODIFYPUBLICATION_H
+#endif  // MODIFYPUBLICATION_H

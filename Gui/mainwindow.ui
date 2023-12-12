@@ -1,363 +1,365 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>mainWindow</class>
- <widget class="QMainWindow" name="mainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>745</width>
-    <height>574</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="logoLabel">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>761</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>A Charming Font Expanded</family>
-      <pointsize>36</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>L-Book</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="textInteractionFlags">
-     <set>Qt::NoTextInteraction</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>100</y>
-      <width>701</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Welcome to L-book. Leafing through our catalogues or login for see your data and your loans.</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="textInteractionFlags">
-     <set>Qt::NoTextInteraction</set>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget_1">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>510</y>
-      <width>329</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Choose Language:</string>
-       </property>
-       <property name="textInteractionFlags">
-        <set>Qt::NoTextInteraction</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QComboBox" name="comboBox">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="whatsThis">
-        <string/>
-       </property>
-       <item>
-        <property name="text">
-         <string>Select your language</string>
+    <class>mainWindow</class>
+    <widget class="QMainWindow" name="mainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>745</width>
+                <height>574</height>
+            </rect>
         </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>English</string>
+        <property name="windowTitle">
+            <string>MainWindow</string>
         </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Italiano</string>
-        </property>
-       </item>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>510</y>
-      <width>252</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QPushButton" name="updateButton">
-       <property name="minimumSize">
-        <size>
-         <width>150</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>150</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Update Data</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="ExitButton">
-       <property name="maximumSize">
-        <size>
-         <width>100</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Exit</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>374</x>
-      <y>190</y>
-      <width>357</width>
-      <height>302</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="title">
-     <string>Login:</string>
-    </property>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>50</y>
-       <width>331</width>
-       <height>241</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_4">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QLabel" name="label_4">
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Username:</string>
-            </property>
-            <property name="textInteractionFlags">
-             <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_5">
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Password:</string>
-            </property>
-            <property name="textInteractionFlags">
-             <set>Qt::NoTextInteraction</set>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <widget class="QLineEdit" name="usernameLine">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="passwordLine">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="echoMode">
-             <enum>QLineEdit::Password</enum>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QPushButton" name="nextButton">
-          <property name="maximumSize">
-           <size>
-            <width>150</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Sign In</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QLabel" name="logoLabel">
+                <property name="geometry">
+                    <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>761</width>
+                        <height>91</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <family>A Charming Font Expanded</family>
+                        <pointsize>36</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>L-Book</string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                </property>
+                <property name="textInteractionFlags">
+                    <set>Qt::NoTextInteraction</set>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                    <rect>
+                        <x>20</x>
+                        <y>100</y>
+                        <width>701</width>
+                        <height>91</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>12</pointsize>
+                    </font>
+                </property>
+                <property name="text">
+                    <string>Welcome to L-book. Leafing through our catalogues or login for see your data and your
+                        loans.
+                    </string>
+                </property>
+                <property name="alignment">
+                    <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                    <bool>true</bool>
+                </property>
+                <property name="textInteractionFlags">
+                    <set>Qt::NoTextInteraction</set>
+                </property>
+            </widget>
+            <widget class="QWidget" name="layoutWidget_1">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>510</y>
+                        <width>329</width>
+                        <height>29</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                        <widget class="QLabel" name="label_3">
+                            <property name="font">
+                                <font>
+                                    <pointsize>10</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Choose Language:</string>
+                            </property>
+                            <property name="textInteractionFlags">
+                                <set>Qt::NoTextInteraction</set>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QComboBox" name="comboBox">
+                            <property name="font">
+                                <font>
+                                    <pointsize>10</pointsize>
+                                </font>
+                            </property>
+                            <property name="whatsThis">
+                                <string/>
+                            </property>
+                            <item>
+                                <property name="text">
+                                    <string>Select your language</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>English</string>
+                                </property>
+                            </item>
+                            <item>
+                                <property name="text">
+                                    <string>Italiano</string>
+                                </property>
+                            </item>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="layoutWidget_2">
+                <property name="geometry">
+                    <rect>
+                        <x>480</x>
+                        <y>510</y>
+                        <width>252</width>
+                        <height>32</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                        <widget class="QPushButton" name="updateButton">
+                            <property name="minimumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>0</height>
+                                </size>
+                            </property>
+                            <property name="maximumSize">
+                                <size>
+                                    <width>150</width>
+                                    <height>16777215</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>10</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Update Data</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QPushButton" name="ExitButton">
+                            <property name="maximumSize">
+                                <size>
+                                    <width>100</width>
+                                    <height>16777215</height>
+                                </size>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>10</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Exit</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_2">
+                <property name="geometry">
+                    <rect>
+                        <x>374</x>
+                        <y>190</y>
+                        <width>357</width>
+                        <height>302</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Login:</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>50</y>
+                            <width>331</width>
+                            <height>241</height>
+                        </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                        <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_4">
+                                <item>
+                                    <layout class="QVBoxLayout" name="verticalLayout">
+                                        <item>
+                                            <widget class="QLabel" name="label_4">
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>12</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Username:</string>
+                                                </property>
+                                                <property name="textInteractionFlags">
+                                                    <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QLabel" name="label_5">
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>12</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="text">
+                                                    <string>Password:</string>
+                                                </property>
+                                                <property name="textInteractionFlags">
+                                                    <set>Qt::NoTextInteraction</set>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </item>
+                                <item>
+                                    <layout class="QVBoxLayout" name="verticalLayout_2">
+                                        <item>
+                                            <widget class="QLineEdit" name="usernameLine">
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>10</pointsize>
+                                                    </font>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QLineEdit" name="passwordLine">
+                                                <property name="font">
+                                                    <font>
+                                                        <pointsize>10</pointsize>
+                                                    </font>
+                                                </property>
+                                                <property name="echoMode">
+                                                    <enum>QLineEdit::Password</enum>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </item>
+                            </layout>
+                        </item>
+                        <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                <item>
+                                    <widget class="QPushButton" name="nextButton">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>150</width>
+                                                <height>16777215</height>
+                                            </size>
+                                        </property>
+                                        <property name="font">
+                                            <font>
+                                                <pointsize>10</pointsize>
+                                            </font>
+                                        </property>
+                                        <property name="text">
+                                            <string>Sign In</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>190</y>
+                        <width>358</width>
+                        <height>302</height>
+                    </rect>
+                </property>
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Catalogues:</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget_3">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>30</y>
+                            <width>251</width>
+                            <height>231</height>
+                        </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                        <item>
+                            <widget class="QPushButton" name="booksButton">
+                                <property name="font">
+                                    <font>
+                                        <pointsize>10</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Books</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QPushButton" name="periodicalsButton">
+                                <property name="font">
+                                    <font>
+                                        <pointsize>10</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>Periodicals</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QPushButton" name="allButton">
+                                <property name="font">
+                                    <font>
+                                        <pointsize>10</pointsize>
+                                    </font>
+                                </property>
+                                <property name="text">
+                                    <string>All</string>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>190</y>
-      <width>358</width>
-      <height>302</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="title">
-     <string>Catalogues:</string>
-    </property>
-    <widget class="QWidget" name="layoutWidget_3">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>30</y>
-       <width>251</width>
-       <height>231</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QPushButton" name="booksButton">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Books</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="periodicalsButton">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Periodicals</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="allButton">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>All</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
- </widget>
- <resources/>
- <connections/>
+    <resources/>
+    <connections/>
 </ui>

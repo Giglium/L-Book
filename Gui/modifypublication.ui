@@ -1,516 +1,516 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>modifyPublication</class>
- <widget class="QDialog" name="modifyPublication">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>1092</width>
-    <height>549</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>Dialog</string>
-  </property>
-  <widget class="QLabel" name="logoLabel">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>0</y>
-     <width>451</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>A Charming Font Expanded</family>
-     <pointsize>36</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>L-Book</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="textInteractionFlags">
-    <set>Qt::NoTextInteraction</set>
-   </property>
-  </widget>
-  <widget class="QGroupBox" name="plotBox">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>390</y>
-     <width>811</width>
-     <height>141</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="title">
-    <string>Plot:</string>
-   </property>
-   <widget class="QTextEdit" name="plotLine">
-    <property name="geometry">
-     <rect>
-      <x>13</x>
-      <y>20</y>
-      <width>791</width>
-      <height>111</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_5">
-   <property name="geometry">
-    <rect>
-     <x>580</x>
-     <y>9</y>
-     <width>491</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="title">
-    <string>Note:</string>
-   </property>
-   <widget class="QLabel" name="noteLabel">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>461</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="textInteractionFlags">
-     <set>Qt::NoTextInteraction</set>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QWidget" name="layoutWidget_1">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>100</y>
-     <width>431</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Choose what you want to create:</string>
-      </property>
-      <property name="textInteractionFlags">
-       <set>Qt::NoTextInteraction</set>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="publiBox">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <item>
-       <property name="text">
-        <string>Select an Option</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Book</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>Periodic</string>
-       </property>
-      </item>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QSplitter" name="splitter">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>150</y>
-     <width>1051</width>
-     <height>231</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <widget class="QGroupBox" name="groupBox">
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="title">
-     <string>Details:</string>
-    </property>
-    <widget class="QWidget" name="layoutWidget_2">
-     <property name="geometry">
-      <rect>
-       <x>22</x>
-       <y>32</y>
-       <width>311</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QLabel" name="label_5">
-          <property name="text">
-           <string>Title:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_6">
-          <property name="text">
-           <string>Subtitle:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_7">
-          <property name="text">
-           <string>ISBN 13:</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="poliLabel_1">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QLineEdit" name="titleLine"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="subtitleLine"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="isbnLine"/>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="poliLine_2"/>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="title">
-     <string>Information:</string>
-    </property>
-    <widget class="QWidget" name="layoutWidget_3">
-     <property name="geometry">
-      <rect>
-       <x>16</x>
-       <y>31</y>
-       <width>121</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
-      <item>
-       <widget class="QLabel" name="label_11">
-        <property name="text">
-         <string>Genre:</string>
+    <class>modifyPublication</class>
+    <widget class="QDialog" name="modifyPublication">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1092</width>
+                <height>549</height>
+            </rect>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_13">
-        <property name="text">
-         <string>Publishing:</string>
+        <property name="windowTitle">
+            <string>Dialog</string>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_17">
-        <property name="text">
-         <string>Release Date:</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="poliLabel_7">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="poliLabel_9">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="poliLabel_11">
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget_4">
-     <property name="geometry">
-      <rect>
-       <x>144</x>
-       <y>31</y>
-       <width>191</width>
-       <height>181</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
-      <item>
-       <widget class="QLineEdit" name="genreLine"/>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="publishingLine"/>
-      </item>
-      <item>
-       <widget class="QDateEdit" name="dateEdit"/>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="poliLine_8"/>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="poliLine_10"/>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="poliLine_12"/>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="title">
-     <string>Extra:</string>
-    </property>
-    <widget class="QWidget" name="layoutWidget_5">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>20</y>
-       <width>301</width>
-       <height>201</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_5">
-      <item>
-       <widget class="QGroupBox" name="groupBox_6">
-        <property name="title">
-         <string>Permission:</string>
-        </property>
-        <widget class="QWidget" name="layoutWidget_6">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>20</y>
-           <width>281</width>
-           <height>67</height>
-          </rect>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_6">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <item>
-             <widget class="QLabel" name="label_3">
-              <property name="text">
-               <string>Type:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QComboBox" name="typeCombo">
-              <item>
-               <property name="text">
-                <string>Select an Option</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Read Only</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Avalidable</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_3">
-            <item>
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>Copy Number:</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLineEdit" name="nCopyLine">
-              <property name="maximumSize">
-               <size>
-                <width>100</width>
-                <height>16777215</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
-      <item>
-       <widget class="QGroupBox" name="groupBox_4">
-        <property name="title">
-         <string>Information:</string>
-        </property>
-        <widget class="QWidget" name="layoutWidget_7">
-         <property name="geometry">
-          <rect>
-           <x>10</x>
-           <y>20</y>
-           <width>171</width>
-           <height>71</height>
-          </rect>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_8">
-          <item>
-           <widget class="QLabel" name="poliLabel_3">
-            <property name="text">
-             <string/>
+        <widget class="QLabel" name="logoLabel">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>451</width>
+                    <height>71</height>
+                </rect>
             </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLabel" name="poliLabel_5">
-            <property name="text">
-             <string/>
+            <property name="font">
+                <font>
+                    <family>A Charming Font Expanded</family>
+                    <pointsize>36</pointsize>
+                </font>
             </property>
-           </widget>
-          </item>
-         </layout>
+            <property name="text">
+                <string>L-Book</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+            <property name="textInteractionFlags">
+                <set>Qt::NoTextInteraction</set>
+            </property>
         </widget>
-        <widget class="QWidget" name="layoutWidget_8">
-         <property name="geometry">
-          <rect>
-           <x>190</x>
-           <y>20</y>
-           <width>91</width>
-           <height>71</height>
-          </rect>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_7">
-          <item>
-           <widget class="QLineEdit" name="poliLine_4"/>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="poliLine_6"/>
-          </item>
-         </layout>
+        <widget class="QGroupBox" name="plotBox">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>390</y>
+                    <width>811</width>
+                    <height>141</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="title">
+                <string>Plot:</string>
+            </property>
+            <widget class="QTextEdit" name="plotLine">
+                <property name="geometry">
+                    <rect>
+                        <x>13</x>
+                        <y>20</y>
+                        <width>791</width>
+                        <height>111</height>
+                    </rect>
+                </property>
+            </widget>
         </widget>
-       </widget>
-      </item>
-     </layout>
+        <widget class="QGroupBox" name="groupBox_5">
+            <property name="geometry">
+                <rect>
+                    <x>580</x>
+                    <y>9</y>
+                    <width>491</width>
+                    <height>131</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>10</pointsize>
+                </font>
+            </property>
+            <property name="title">
+                <string>Note:</string>
+            </property>
+            <widget class="QLabel" name="noteLabel">
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>20</y>
+                        <width>461</width>
+                        <height>91</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="wordWrap">
+                    <bool>true</bool>
+                </property>
+                <property name="textInteractionFlags">
+                    <set>Qt::NoTextInteraction</set>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_1">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>100</y>
+                    <width>431</width>
+                    <height>29</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                    <widget class="QLabel" name="label_2">
+                        <property name="font">
+                            <font>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Choose what you want to create:</string>
+                        </property>
+                        <property name="textInteractionFlags">
+                            <set>Qt::NoTextInteraction</set>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QComboBox" name="publiBox">
+                        <property name="font">
+                            <font>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <item>
+                            <property name="text">
+                                <string>Select an Option</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Book</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Periodic</string>
+                            </property>
+                        </item>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QSplitter" name="splitter">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>150</y>
+                    <width>1051</width>
+                    <height>231</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QGroupBox" name="groupBox">
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Details:</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget_2">
+                    <property name="geometry">
+                        <rect>
+                            <x>22</x>
+                            <y>32</y>
+                            <width>311</width>
+                            <height>181</height>
+                        </rect>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                        <item>
+                            <layout class="QVBoxLayout" name="verticalLayout_2">
+                                <item>
+                                    <widget class="QLabel" name="label_5">
+                                        <property name="text">
+                                            <string>Title:</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLabel" name="label_6">
+                                        <property name="text">
+                                            <string>Subtitle:</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLabel" name="label_7">
+                                        <property name="text">
+                                            <string>ISBN 13:</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLabel" name="poliLabel_1">
+                                        <property name="text">
+                                            <string/>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </item>
+                        <item>
+                            <layout class="QVBoxLayout" name="verticalLayout">
+                                <item>
+                                    <widget class="QLineEdit" name="titleLine"/>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="subtitleLine"/>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="isbnLine"/>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="poliLine_2"/>
+                                </item>
+                            </layout>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_2">
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Information:</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget_3">
+                    <property name="geometry">
+                        <rect>
+                            <x>16</x>
+                            <y>31</y>
+                            <width>121</width>
+                            <height>181</height>
+                        </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                        <item>
+                            <widget class="QLabel" name="label_11">
+                                <property name="text">
+                                    <string>Genre:</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="label_13">
+                                <property name="text">
+                                    <string>Publishing:</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="label_17">
+                                <property name="text">
+                                    <string>Release Date:</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="poliLabel_7">
+                                <property name="text">
+                                    <string/>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="poliLabel_9">
+                                <property name="text">
+                                    <string/>
+                                </property>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QLabel" name="poliLabel_11">
+                                <property name="text">
+                                    <string/>
+                                </property>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+                <widget class="QWidget" name="layoutWidget_4">
+                    <property name="geometry">
+                        <rect>
+                            <x>144</x>
+                            <y>31</y>
+                            <width>191</width>
+                            <height>181</height>
+                        </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_3">
+                        <item>
+                            <widget class="QLineEdit" name="genreLine"/>
+                        </item>
+                        <item>
+                            <widget class="QLineEdit" name="publishingLine"/>
+                        </item>
+                        <item>
+                            <widget class="QDateEdit" name="dateEdit"/>
+                        </item>
+                        <item>
+                            <widget class="QLineEdit" name="poliLine_8"/>
+                        </item>
+                        <item>
+                            <widget class="QLineEdit" name="poliLine_10"/>
+                        </item>
+                        <item>
+                            <widget class="QLineEdit" name="poliLine_12"/>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_3">
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Extra:</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget_5">
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>20</y>
+                            <width>301</width>
+                            <height>201</height>
+                        </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_5">
+                        <item>
+                            <widget class="QGroupBox" name="groupBox_6">
+                                <property name="title">
+                                    <string>Permission:</string>
+                                </property>
+                                <widget class="QWidget" name="layoutWidget_6">
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>20</y>
+                                            <width>281</width>
+                                            <height>67</height>
+                                        </rect>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                                        <item>
+                                            <layout class="QHBoxLayout" name="horizontalLayout_2">
+                                                <item>
+                                                    <widget class="QLabel" name="label_3">
+                                                        <property name="text">
+                                                            <string>Type:</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QComboBox" name="typeCombo">
+                                                        <item>
+                                                            <property name="text">
+                                                                <string>Select an Option</string>
+                                                            </property>
+                                                        </item>
+                                                        <item>
+                                                            <property name="text">
+                                                                <string>Read Only</string>
+                                                            </property>
+                                                        </item>
+                                                        <item>
+                                                            <property name="text">
+                                                                <string>Avalidable</string>
+                                                            </property>
+                                                        </item>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item>
+                                            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                                <item>
+                                                    <widget class="QLabel" name="label_4">
+                                                        <property name="text">
+                                                            <string>Copy Number:</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLineEdit" name="nCopyLine">
+                                                        <property name="maximumSize">
+                                                            <size>
+                                                                <width>100</width>
+                                                                <height>16777215</height>
+                                                            </size>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                    </layout>
+                                </widget>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QGroupBox" name="groupBox_4">
+                                <property name="title">
+                                    <string>Information:</string>
+                                </property>
+                                <widget class="QWidget" name="layoutWidget_7">
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>20</y>
+                                            <width>171</width>
+                                            <height>71</height>
+                                        </rect>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                                        <item>
+                                            <widget class="QLabel" name="poliLabel_3">
+                                                <property name="text">
+                                                    <string/>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item>
+                                            <widget class="QLabel" name="poliLabel_5">
+                                                <property name="text">
+                                                    <string/>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                    </layout>
+                                </widget>
+                                <widget class="QWidget" name="layoutWidget_8">
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>20</y>
+                                            <width>91</width>
+                                            <height>71</height>
+                                        </rect>
+                                    </property>
+                                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                                        <item>
+                                            <widget class="QLineEdit" name="poliLine_4"/>
+                                        </item>
+                                        <item>
+                                            <widget class="QLineEdit" name="poliLine_6"/>
+                                        </item>
+                                    </layout>
+                                </widget>
+                            </widget>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_9">
+            <property name="geometry">
+                <rect>
+                    <x>870</x>
+                    <y>500</y>
+                    <width>195</width>
+                    <height>32</height>
+                </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                    <widget class="QPushButton" name="saveButton">
+                        <property name="font">
+                            <font>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Save</string>
+                        </property>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QPushButton" name="exitButton">
+                        <property name="font">
+                            <font>
+                                <pointsize>10</pointsize>
+                            </font>
+                        </property>
+                        <property name="text">
+                            <string>Exit</string>
+                        </property>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
     </widget>
-   </widget>
-  </widget>
-  <widget class="QWidget" name="layoutWidget_9">
-   <property name="geometry">
-    <rect>
-     <x>870</x>
-     <y>500</y>
-     <width>195</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_5">
-    <item>
-     <widget class="QPushButton" name="saveButton">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Save</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="exitButton">
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Exit</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
- </widget>
- <resources/>
- <connections/>
+    <resources/>
+    <connections/>
 </ui>

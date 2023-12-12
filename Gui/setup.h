@@ -2,34 +2,33 @@
 #define SETUP_H
 
 #include <QDialog>
-#include <QWidget>
 #include <QFileDialog>
+#include <QFont>
 #include <QString>
 #include <QStringList>
-#include <QFont>
+#include <QWidget>
 
 namespace Ui {
 class setup;
 }
 
-class setup : public QDialog
-{
-    Q_OBJECT
+class setup : public QDialog {
+  Q_OBJECT
 
-public:
-    explicit setup( QWidget *parent = 0 );
-    ~setup();
+ public:
+  explicit setup(QWidget *parent = 0);
+  ~setup();
 
-signals:
-    void sendPath( const QString & );
+ signals:
+  void sendPath(const QString &);
 
-private slots:
-    void on_selectFolder_clicked();
-    void on_exitButton_clicked();
-    void on_nextButton_clicked();
+ private slots:
+  void on_selectFolder_clicked();
+  void on_exitButton_clicked();
+  void on_nextButton_clicked();
 
-private:
-    Ui::setup *ui;
+ private:
+  Ui::setup *ui;
 };
 
-#endif // SETUP_H
+#endif  // SETUP_H
